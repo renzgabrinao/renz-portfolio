@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+// * {
+//   border: 1px solid red;
+// }
+
+// firefox scroll bar styling
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.45) rgba(0, 0, 0, 0.4);
+}
+
+// chrome, edge, safari scroll bar styling
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
 #root {
   width: 100vw;
   height: 100vh;
@@ -20,5 +43,11 @@
       height: 100%;
       scroll-snap-align: start;
     }
+
+    // ul {
+    //   li {
+    //     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    //   }
+    // }
   }
 }
